@@ -1,11 +1,13 @@
 package main
 
-import "fmt"
-import "os"
-import "bufio"
-import "time"
-import "github.com/fatih/color"
-import "math/rand"
+import (
+  "fmt"
+  "os"
+  "bufio"
+  "time"
+  "github.com/fatih/color"
+  "math/rand"
+)
 
 func main() {
   rand.Seed(time.Now().Unix())
@@ -25,10 +27,6 @@ func main() {
   t.Println("Enter third  choice: ")
   third_scan := bufio.NewScanner(os.Stdin)
   third_scan.Scan()
-
-  // array[0] = scan.Text()
-  // array[1] = second_scan.Text()
-  // array[2] = third_scan.Text()
 
   input = append(input, 
     scan.Text(),
